@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Flat, Clean, Responsive, admin template built with bootstrap 3">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+    <title>查看案例</title>
+
+    <link rel="stylesheet" type="text/css" href="./js/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./js/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./css/global.css">
+
+    <script src="./js/vendor/jquery/dist/jquery.js"></script>
+</head>
+
+<body class="case">
+	<header class="header">
+		<i class="fa fa-angle-left" aria-hidden="true"></i>
+		<h3>我的经销商</h3>
+		<i class="fa fa-user-weiui">
+			<img src="./images/user_03.png">
+		</i>
+	</header>
+
+	<nav class="flex-box">
+		<a href="#" class="tabbar-first text-center active">
+			<i class="fa fa-sort-up"></i>
+			<img src="./images/footer-keyboard-icon-_03.png">
+		</a>
+		<div class="tabbar flex-box">
+			<a href="#" class="text-center">我的经销商</a>
+			<a href="#" class="text-center">
+				<i>
+					<img src="./images/footer-list-icon_03.png">
+				</i>
+				查看
+			</a>
+			<a href="#" class="text-center">
+				<i>
+					<img src="./images/footer-list-icon_03.png">
+				</i>
+				交流
+			</a>
+		</div>		
+	</nav>
+
+	<section class="main-container">
+		<div class="search-box flex-box">
+			<div class="dropdown col-xs-3">
+			    <a type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+			        <i class="fa fa-list-ul"></i>
+			        按风格
+			    </a>
+			    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+			        <li role="presentation" class="selected">
+			            <a role="menuitem" tabindex="-1" href="#">
+			            	按材质
+			            </a>
+			        </li>
+			        <li role="presentation">
+			            <a role="menuitem" tabindex="-1" href="#">
+			            	按颜色
+			            </a>
+			        </li>
+			        <li role="presentation">
+			            <a role="menuitem" tabindex="-1" href="#">
+			            	按功能
+			            </a>
+			        </li>
+			    </ul>
+			</div>
+			<form class="bs-example bs-example-form col-xs-9" role="form">
+				<div class="input-group">
+		            <i class="input-group-addon fa fa-search"></i>
+		            <input type="text" class="form-control">
+		        </div>
+		    </form>
+		</div>
+		<section class="case-box clearfix">
+			<div class="list-group-box pull-left">
+				<ul class="list-group">
+				    <li class="list-group-item selected">热门推荐</li>
+				    <li class="list-group-item">现代简约
+				    <li class="list-group-item">简欧</li>
+				    <li class="list-group-item">中式</li>
+				    <li class="list-group-item">混搭</li>
+				    <li class="list-group-item">美式</li>
+				    <li class="list-group-item">田园</li>
+				</ul>
+			</div>
+			<div class="case-container pull-right">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+                    </ol>
+                      <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item">
+                            <img src="./images/carousel_03.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                          <img src="./images/carousel_03.jpg" alt="...">
+                        </div>
+                        <div class="item active">
+                          <img src="./images/carousel_03.jpg" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <h4>为您推荐</h4>
+                <ul class="list-group">
+				    <li class="list-group-item no-padding flex-box">
+				    	<div class="list-group-item-img">
+				    		<img src="./images/case-list_01.jpg">
+				    	</div>
+				    	<div class="list-group-item-text">
+				    		<p>畅销款</p>
+				    		<p>外平开窗</p>
+				    		<p>南美红檀香</p>
+				    	</div>
+				    </li>
+				    <li class="list-group-item no-padding flex-box">
+				    	<div class="list-group-item-img">
+				    		<img src="./images/case-list_02.jpg">
+				    	</div>
+				    	<div class="list-group-item-text">
+				    		<p>畅销款</p>
+				    		<p>外平开窗</p>
+				    		<p>南美红檀香</p>
+				    	</div>
+				    </li>
+
+					<li class="list-group-item no-padding flex-box">
+				    	<div class="list-group-item-img">
+				    		<img src="./images/case-list_03.jpg">
+				    	</div>
+				    	<div class="list-group-item-text">
+				    		<p>畅销款</p>
+				    		<p>外平开窗</p>
+				    		<p>南美红檀香</p>
+				    	</div>
+				    </li>
+
+				</ul>
+			</div>
+		</section>
+	</section>
+
+
+	<script src="./js/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>

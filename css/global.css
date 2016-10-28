@@ -1,0 +1,519 @@
+html {
+	font-size: 62.5%;/*10 ÷ 16 × 100% = 62.5%*/
+}
+body {
+	font-size: 1.4rem;/*1.4 × 10px = 14px */
+    background-color: #f3f3f3;
+}
+h1 { 
+font-size: 2.4rem;/*2.4 × 10px = 24px*/
+}
+
+
+a,a:focus, a:hover{
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+}
+header{
+	position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1998;
+	background-color: #1b1a1f;
+	color: #fff;
+	height: 5rem;
+}
+.header{
+	display: flex;
+	align-items: center;
+	padding: 0 1.5rem;
+}
+header .fa-angle-left{
+	font-size: 4rem;
+}
+header h3{
+	margin: 0;
+    font-size: 2.1rem;
+    font-weight: 100;
+    flex: 1;
+    text-align: center;
+}
+header .fa-user-weiui{
+	width: 2.2rem;
+}
+.panel{
+	overflow: hidden;
+	border:1px solid #d3d3d3;
+}
+.flex-box{
+	display: flex;
+	align-items: center;
+}
+
+nav{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	height: 4.5rem;
+	background-color:#f8f8f8;
+	overflow: hidden;
+	z-index: 1999;
+}
+nav .tabbar{
+	flex: 1;
+}
+nav .tabbar a{
+	flex: 1;
+    color: #777;
+    border-right: 1px solid #d3d3d3;
+    padding: 1.4rem 0px;
+}
+nav .tabbar a:last-child{
+	border-right: 0;
+}
+nav .tabbar a i{
+    width: 1rem;
+    display: inline-block;
+}
+nav .active{
+	background-color:#bdbdbd;
+}
+.main-container{
+    margin-bottom: 4.5rem;
+    margin-top: 5rem;
+   	padding: 1rem;
+}
+.color-black{
+	color: #131313;
+}
+.status{
+    color: #fff;
+    padding: 0.2rem 0.8rem;
+    font-size: 1rem;	
+}
+.bg-yellow{
+	background: #f8c400;
+}
+.bg-green{
+	background-color: #2acb7b;
+}
+.color-yellow{
+	color: #f8c400;
+}
+
+.margin-box{
+	margin: 1rem 0;
+}
+.text-muted{
+	color: #555;
+}
+.text-indent{
+	text-indent: 2.4rem;
+}
+.btn-warning{
+	color: #fff;
+	background-color: #f8c400;
+	border-color: #f8c400;
+}
+.btn-warning:hover,
+.btn-warning.active.focus, 
+.btn-warning.active:focus, 
+.btn-warning.active:hover, 
+.btn-warning:active.focus, 
+.btn-warning:active:focus, 
+.btn-warning:active:hover, 
+.open>.dropdown-toggle.btn-warning.focus, 
+.open>.dropdown-toggle.btn-warning:focus, 
+.open>.dropdown-toggle.btn-warning:hover{
+	background-color: #f8c400;
+	border-color: #f8c400;
+	outline: none;
+}
+.border-bottom{
+	border-bottom: 1px solid #eee;
+}
+.panel-item{
+	margin:0 1rem;
+	padding: 1rem 0;
+}
+.flex-start{
+	align-items: flex-start;
+}
+p.nowrap{
+	overflow: hidden; 
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.nav-pills li{
+    border-right: 1px solid #efefef;
+    text-align: center;
+    flex:1;
+}
+.nav-pills li:last-child{
+	border: none;
+}
+
+.nav-pills li a{
+	padding: 0;
+	color: #929292;
+	font-size: 1.3rem;
+	line-height: 1rem;
+}
+.nav-pills li a i{
+	font-size: 1.6rem;
+	padding-right: 0.5rem;
+}
+.list-group-item{
+	border: 1px solid #efefef;
+}
+
+
+
+/*------------------------
+		home.css
+--------------------------*/
+.fa-sort-up{
+	color: #8c8c8c;
+}
+.tabbar-first{
+    width: 14%;
+    padding: 1rem 0;
+    border-right: 1px solid #d3d3d3;
+}
+.tabbar-first i{
+	display: block;
+    font-size: 1rem;
+}
+.tabbar-first img{
+	width: 2.5rem;
+}
+.no-padding{
+	padding:0;
+}
+
+
+
+/*------------------------
+		home-dealer.css
+--------------------------*/
+.home-dealer .main-container,
+.order .main-container,
+.massage .main-container,
+.active .main-container{
+	padding:1rem 0;
+}
+.home-dealer .list-group-item,
+.order .list-group-item,
+.massage .list-group-item,
+.active .list-group-item
+{
+	border: 0;
+	border-radius: 0;
+}
+
+.home-dealer .list-group-item-img,
+.home-dealer-2 .list-group-item-img{
+	width: 34%;
+	position: relative;
+}
+.home-dealer .list-group-item-img span{
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+}
+.home-dealer .list-group-item-text{
+	width: 65.5%;
+    padding-left: 0.8rem;
+}
+.home-dealer .list-group-item-text h4{
+	margin-top: 0;
+	color: #131313;
+}
+.home-dealer .list-group-item-text p{
+	font-size: 1.2rem;
+	margin: 0;
+}
+
+.home-dealer .list-group-item-text p>span,
+.home-dealer .list-group-item-text p>label{
+	padding-right:0.8rem;
+}
+.fa-angle-right{
+    font-size: 2.6rem;
+    color: #949494;
+}
+.home-dealer .list-group-item,
+.active .list-group-item{
+	margin-bottom: 1rem;
+}
+
+
+/*------------------------
+		home-dealer-2.css
+--------------------------*/
+.home-dealer-2,
+.active-content{
+	background-color: #fff;
+}
+.home-dealer-2 .list-group-item{
+	margin: 0 1rem;
+}
+.home-dealer-2 .list-group-item-text{
+	width: 66%;
+} 
+.home-dealer-2 .list-group-item-text p{
+	margin-bottom: 1rem;
+}
+.chart h5{
+	font-size: 1.5rem;
+}
+a.flex-box label{
+	margin-bottom: 0;
+	padding-right: 0.5rem;
+}
+a.flex-box>span{
+	flex: 1;
+}
+
+
+/*------------------------
+		order.css
+--------------------------*/
+.list-group-item-text{
+	padding-left: 0.8rem;
+}
+.order .list-group-item,
+.massage .list-group-item{
+	margin: 0;
+	padding: 1rem;
+	border-bottom: 1px solid #eeeeee;
+}
+.order .list-group-item-img,
+.massage .list-group-item-img{
+	width: 15%;
+}
+.order .list-group-item-text{
+	width: 85%;
+}
+.order p>small{
+	flex: 1;
+    text-align: right;
+}
+.list-group-item-heading{
+	flex:1;
+	font-size: 1.5rem;
+}
+.order .list-group-item-text .status{
+	margin-bottom: 0.4rem;
+}
+
+/*------------------------
+		order.css
+--------------------------*/
+.massage .list-group-item-text {
+    width: 82%;
+    padding:0 0.8rem;
+}
+.flex-start h4{
+	margin-top: 0;
+}
+
+
+
+/*------------------------
+	active-content.css
+--------------------------*/
+.active-content article{
+	font-size: 1.5rem;
+}
+.active-content article h4{
+	margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+.active-content article>section{
+	margin-top:2rem;
+}
+.active-content article p{
+	margin-bottom: 0;
+}
+.active-content .nav-pills{
+    margin-top: 4.5rem;
+}
+
+
+
+
+/*------------------------
+	    active.css
+--------------------------*/
+.active .list-group{
+	margin-bottom: 6rem;
+}
+.active .list-group-item{
+	padding: 1rem 0 0 0;
+}
+.active .list-group-item h4,
+.active .list-group-item p{
+	padding:0 1rem;
+}
+.active .list-group-item h4{
+	margin-top:0;
+}
+.active .nav-pills{
+	padding:1rem 0;
+	border-top:1px solid #efefef;
+}
+
+
+
+/*------------------------
+	 order-details.css
+--------------------------*/
+.order-details .main-container{
+	padding: 0;
+}
+.order-details .panel{
+	padding: 1rem;
+	border: 0;
+	border-radius: 0;
+}
+.address p span{
+	flex:1;
+}
+.address i{
+	padding-right: 0.5rem;
+	color:#bdbdbd;
+}
+i.fa-user{
+	font-size: 2rem;
+}
+i.fa-mobile{
+	font-size: 2.5rem;
+}
+i.fa-map-marker{
+	font-size: 2.3rem;
+}
+.panel-header h4{
+	font-size: 1.6rem;
+	flex:1;
+}
+.order-details small{
+	color: #8f8f8f;
+}
+.order-details .table{
+	margin-bottom: 0;
+}
+.table .list-group-item{
+	padding: 1rem 0;
+}
+.table h1{
+	font-weight: 400;
+}
+.table .list-group-item section .col-xs-10 span{
+	display: inline-block;
+ 	padding-right: 0.2rem;
+}
+.table .list-group-item section p{
+	padding-right: 0;
+}
+.table-footer{
+	margin: 1rem 0;
+	font-size: 1.2rem;
+}
+
+
+
+
+/*------------------------
+	      case.css
+--------------------------*/
+.case .main-container{
+	padding: 0;
+	background-color: #fff;
+}
+.case .search-box{
+	background-color: #fff;
+	height: 4.5rem;
+}
+.case .search-box .dropdown-toggle{
+	color: #000;
+	font-size: 1.6rem;
+}
+.fa-search{
+	display: table-cell;
+}
+.case .input-group-addon{
+	border: 0;
+	background-color: #f0f2f5;
+}
+.case .input-group input.form-control{
+	border: 0;
+	background-color: #f0f2f5;
+	outline: none;
+	box-shadow: none;
+}
+.case .dropdown .btn{
+	padding: 0;
+	text-align: center;
+}
+.case .dropdown-menu .selected{
+	background: #efefef;
+}
+.case-box{
+	display: flex;
+	min-height: 52rem;
+}
+.case .case-container{
+	background-color: #f3f3f3;
+}
+.case .list-group-box{
+	width: 24%;
+}
+.case .list-group-box .list-group-item{
+	border-left: 0;
+	border-right: 0;
+	text-align: center;
+	padding:1rem 0.8rem;
+}
+.case .list-group-item.selected{
+	background-color: #f3f3f3;
+	color: #f8c400;
+}
+.case .list-group-item:first-child,
+.case .list-group-item:last-child{
+	border-radius: 0;
+}
+.case .case-container{
+    width: 76%;
+    padding: 1rem 1.4rem;
+}
+.case #carousel-example-generic{
+	height: 8rem;
+}
+.case .carousel-indicators{
+	bottom: 0;
+	margin-bottom: 0;
+}
+.case .carousel-indicators li{
+	width: 0.8rem;
+	height: 0.8rem;
+	background-color: #fff;
+	border: 0;
+}
+.case .carousel-indicators .active{
+	background-color: #f8c400;
+
+}
+.case .case-container .list-group-item{
+	margin-bottom: 1rem;
+	border: 0;
+}
+.case .case-container .list-group-item p{
+	margin-bottom: 0.4rem;
+}
+.case .case-container .list-group-item-img{
+ 	width: 60%;
+}
