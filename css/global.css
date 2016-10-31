@@ -61,6 +61,7 @@ nav{
 	background-color:#f8f8f8;
 	overflow: hidden;
 	z-index: 1999;
+	border-top:1px solid #bfbfbf;
 }
 nav .tabbar{
 	flex: 1;
@@ -68,7 +69,7 @@ nav .tabbar{
 nav .tabbar a{
 	flex: 1;
     color: #777;
-    border-right: 1px solid #d3d3d3;
+    border-right: 1px solid #bfbfbf;
     padding: 1.4rem 0px;
 }
 nav .tabbar a:last-child{
@@ -77,9 +78,6 @@ nav .tabbar a:last-child{
 nav .tabbar a i{
     width: 1rem;
     display: inline-block;
-}
-nav .active{
-	background-color:#bdbdbd;
 }
 .main-container{
     margin-bottom: 4.5rem;
@@ -181,7 +179,7 @@ p.nowrap{
 .tabbar-first{
     width: 14%;
     padding: 1rem 0;
-    border-right: 1px solid #d3d3d3;
+    border-right: 1px solid #bfbfbf;
 }
 .tabbar-first i{
 	display: block;
