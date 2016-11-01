@@ -26,6 +26,12 @@ header{
 	color: #fff;
 	height: 5rem;
 }
+ul{
+	margin-bottom: 0;
+}
+li{
+	list-style: none;
+}
 .header{
 	display: flex;
 	align-items: center;
@@ -59,25 +65,74 @@ nav{
 	bottom: 0;
 	height: 4.5rem;
 	background-color:#f8f8f8;
-	overflow: hidden;
 	z-index: 1999;
 	border-top:1px solid #bfbfbf;
 }
 nav .tabbar{
 	flex: 1;
 }
-nav .tabbar a{
-	flex: 1;
-    color: #777;
-    border-right: 1px solid #bfbfbf;
-    padding: 1.4rem 0px;
+nav .tabbar li{
+	text-align: center;
 }
-nav .tabbar a:last-child{
+nav .tabbar>li{
+	flex: 1;
+    border-right: 1px solid #bfbfbf;
+}
+nav .tabbar>li>a{
+	display: block;
+    color: #777;
+    padding: 1.5rem 0;
+}
+nav .tabbar li:last-child{
 	border-right: 0;
 }
 nav .tabbar a i{
     width: 1rem;
     display: inline-block;
+}
+nav .dropdown-menu{
+	top: inherit;
+	bottom: 6rem;
+    min-width: 100%;
+}
+nav .tabbar .dropdown-menu:after{
+	content: "";
+	display: block;
+	border-width: 10px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    bottom: -0.8rem;
+    left: 50%;
+    margin-left: -10px;
+    border-top-color: #fff;
+    border-bottom-width: 0;
+}
+.nav .open>a, 
+.nav .open>a:focus, 
+.nav .open>a:hover{
+	background: none;
+}
+.number-icon{
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: #f8c400;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+    color: #fff;
+    border-radius: 50%;
+    padding-top: 0.2rem;
+}
+.dropdown-menu>li>a{
+    padding: 0.3rem 0.2rem;
+    border-bottom: 1px solid #ddd;
+}
+.dropdown-menu>li:last-child>a{
+	border: 0;
 }
 .main-container{
     margin-bottom: 4.5rem;
@@ -180,6 +235,7 @@ p.nowrap{
     width: 14%;
     padding: 1rem 0;
     border-right: 1px solid #bfbfbf;
+    height: 4.5rem;
 }
 .tabbar-first i{
 	display: block;
@@ -190,6 +246,9 @@ p.nowrap{
 }
 .no-padding{
 	padding:0;
+}
+.padding-top{
+	padding-top: 10px;
 }
 
 
@@ -319,6 +378,17 @@ a.flex-box>span{
 	margin-top: 0;
 }
 
+
+/*------------------------
+	    massage.css
+--------------------------*/
+.massage h4{
+	font-size: 1.6rem;
+}
+.massage h4 .img-icon img{
+	margin-right: 0.4rem;
+	width: 1.8rem;
+}
 
 
 /*------------------------
@@ -491,17 +561,20 @@ i.fa-map-marker{
 .case #carousel-example-generic{
 	height: 8rem;
 }
-.case .carousel-indicators{
+.case .carousel-inner .item img{
+	min-height: 8rem;
+}
+.carousel-indicators{
 	bottom: 0;
 	margin-bottom: 0;
 }
-.case .carousel-indicators li{
+.carousel-indicators li{
 	width: 0.8rem;
 	height: 0.8rem;
 	background-color: #fff;
 	border: 0;
 }
-.case .carousel-indicators .active{
+.carousel-indicators .active{
 	background-color: #f8c400;
 
 }
@@ -515,3 +588,18 @@ i.fa-map-marker{
 .case .case-container .list-group-item-img{
  	width: 60%;
 }
+
+
+
+
+
+/*-------------------------
+	Patrol-Report-content.css
+-------------------------*/
+.Patrol-Report-content{
+	background-color: #fff;
+}
+.Patrol-Report-content p{
+	margin:0.4rem 0;
+}
+

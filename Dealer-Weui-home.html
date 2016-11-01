@@ -7,19 +7,20 @@
     <meta name="description" content="Flat, Clean, Responsive, admin template built with bootstrap 3">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 
-    <title>首页之我的经销商</title>
+    <title>企业端微信首页</title>
 
     <link rel="stylesheet" type="text/css" href="./js/vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./js/vendor/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="./css/global.css">
+    <link rel="stylesheet" type="text/css" href="./css/Dealer-Weui.css">
 
     <script src="./js/vendor/jquery/dist/jquery.js"></script>
 </head>
 
-<body class="home-dealer-2">
+<body class="Dealer-Weui-home">
 	<header class="header">
 		<i class="fa fa-angle-left" aria-hidden="true"></i>
-		<h3>我的经销商</h3>
+		<h3>飞宇企业助手</h3>
 		<i class="fa fa-user-weiui">
 			<img src="./images/user_03.png">
 		</i>
@@ -74,49 +75,40 @@
 		</ul>		
 	</nav>
 
-	<section class="main-container">		
-		<div class="flex-box">
-			<div class="list-group-item-img">
-				<img src="./images/dealer-list-img_03.jpg">
-			</div>
-			<div class="list-group-item-text">
-				<h4>南门富森专卖店</h4>
-				<p class="text-muted">
-					余巧:
-					<span>13449545454</span>
-					<span>028-62989865</span>	
-				</p>
-				<p><span class="status bg-yellow">营业中</span></p>
-			</div>
-		</div>	
-		<div class="chart">
-			<h5 class="text-center text-muted">到店及下单统计</h5>
-			<div class="panel">
-				<img src="./images/chart_05.jpg">
-			</div>
-		</div>
-
+	<section class="main-container">	
 		<div class="panel">
-		    <a class="panel-item flex-box text-muted border-bottom" href="#">
-				<label>订单:</label>
-				<span>执行中</span>
-				<span>12未清账</span>
-				<span>12500.00</span>
-				<i class="fa fa-angle-right"></i>
-			</a>
-			<a class="panel-item flex-box text-muted" href="#">
-				<label>活动:</label>
-				<span>315飞宇促销活动</span>
-				<span>汇报1</span>
-				<i class="fa fa-angle-right"></i>
-			</a>
-		</div>
-		<button type="button" class="btn btn-warning btn-lg btn-block">返回</button>
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+                </ol>
+                  <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item">
+                        <img src="./images/carousel_03.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                      <img src="./images/carousel_03.jpg" alt="...">
+                    </div>
+                    <div class="item active">
+                      <img src="./images/carousel_03.jpg" alt="...">
+                    </div>
+                </div>
+            </div>
+	    </div>
+
+		<section class="panel">
+			<img src="./images/chart_01.jpg">
+		</section>
+
+		<section class="panel">
+			<img src="./images/chart_02.jpg">
+		</section>
 	</section>
 
 
 	<script src="./js/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
-
 
 </html>
