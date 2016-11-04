@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Flat, Clean, Responsive, admin template built with bootstrap 3">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>新增汇报</title>
+
+    <link rel="stylesheet" type="text/css" href="./js/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./js/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./css/global.css">
+    <link rel="stylesheet" type="text/css" href="./css/fileinput.css">
+
+    <script src="./js/vendor/jquery/dist/jquery.js"></script>
+</head>
+
+<body class="add-report">
+	<header class="header">
+		<i class="fa fa-angle-left" aria-hidden="true"></i>
+		<h3>新增汇报</h3>
+	</header>
+
+	<nav class="flex-box">
+		<a href="#" class="text-center tabbar-first active">
+			<i class="fa fa-sort-up"></i>
+			<img src="./images/footer-keyboard-icon-_03.png">
+		</a>
+		<ul class="tabbar flex-box nav">
+			<li>
+				<a href="#">我的经销商</a>
+			</li>
+			<li>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<i>
+						<img src="./images/footer-list-icon_03.png">
+					</i>
+					查看
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="#">活动</a>
+					</li>
+					<li>
+						<a href="#">订单</a>
+					</li>
+					<li>
+						<a href="#">案例</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<i>
+						<img src="./images/footer-list-icon_03.png">
+					</i>
+					交流
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="#">消息</a>
+						<small class="number-icon">6</small>
+					</li>
+					<li>
+						<a href="#">汇报</a>
+					</li>
+				</ul>
+				<small class="number-icon">6</small>
+			</li>
+		</ul>		
+	</nav>
+
+	<section class="main-container">
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<div class="col-xs-12 flex-box no-padding">
+				    <label for="firstname" class="control-label">经销商:</label>
+			        <select class="form-control">
+						<option>赵老大</option>
+						<option>王老二</option>
+						<option>李老三</option>
+					</select>
+					<span class="caret"></span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-xs-12 flex-box no-padding">
+				    <label for="firstname" class="control-label">门店:</label>
+			        <select class="form-control">
+						<option>南富森</option>
+						<option>北富森</option>
+					</select>
+					<span class="caret"></span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-xs-12 flex-box no-padding">
+				    <label for="lastname" class="control-label">关于:</label>
+				    <select class="form-control">
+				        <option>315促销活动方案</option>
+						<option>日常汇报</option>
+					</select>
+					<span class="caret"></span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-xs-12 flex-box no-padding">
+				    <label for="lastname" class="control-label">内容:</label>
+				    <textarea class="form-control" placeholder="请输入汇报内容">
+					</textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-xs-3 input-img-box no-padding">
+					<div class="input-img">
+						<img src="./images/dealer-list-img_03.jpg">
+					</div>
+					<span class="close">x</span>
+				</div>
+				<div class="col-xs-3 input-img-box no-padding">
+					<div class="input-img">
+						<img src="./images/dealer-list-img_03.jpg">
+					</div>
+					<span class="close">x</span>
+				</div>
+
+				<div class="col-xs-3 input-img-box no-padding">
+					<div class="input-img">
+						<img src="./images/dealer-list-img_03.jpg">
+					</div>
+					<span class="close">x</span>
+				</div>
+
+				<div class="col-xs-3 input-img-box no-padding">
+					<div class="input-img">
+						<img src="./images/dealer-list-img_03.jpg">
+					</div>
+					<span class="close">x</span>
+				</div>
+				<div class="col-xs-3 input-img-box no-padding">
+					<div class="input-img">
+						<img src="./images/dealer-list-img_03.jpg">
+					</div>
+					<span class="close">x</span>
+				</div>
+				<div class="col-xs-3 input-img-box no-padding">
+					<div class="btn btn-warning btn-file btn-upload-img col-xs-12">
+                        <span>+</span>
+                        <input id="file-0a" class="file" type="file" multiple="" data-min-file-count="1">
+                    </div>
+				</div>
+			</div>
+		</form>
+
+		<div class="panel-body">
+			<button type="button" class="btn btn-warning btn-lg btn-block">确认</button>
+		</div>
+	</section>
+
+
+	<script src="./js/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>

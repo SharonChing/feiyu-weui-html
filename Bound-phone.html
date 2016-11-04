@@ -5,9 +5,8 @@
 
     <meta charset="utf-8">
     <meta name="description" content="Flat, Clean, Responsive, admin template built with bootstrap 3">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-
-    <title>查看订单详情</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>手机验证</title>
 
     <link rel="stylesheet" type="text/css" href="./js/vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./js/vendor/font-awesome/css/font-awesome.css">
@@ -17,11 +16,11 @@
 </head>
 
 <body class="bound-phone">
-	<header class="header">
+<!-- 	<header class="header">
 		<i class="fa fa-angle-left" aria-hidden="true"></i>
-		<h3>飞宇企业助手</h3>
+		<h3>查看订单详情</h3>
 	</header>
-
+ -->
 	<nav class="flex-box">
 		<a href="#" class="text-center tabbar-first active">
 			<i class="fa fa-sort-up"></i>
@@ -72,19 +71,24 @@
 	</nav>
 
 	<section class="main-container">
-		<ul class="list-group">
-			<li class="list-group-item flex-box">
-				<img src="./images/phone_03.png">
-				<input type="text" placeholder="请输入手机号码">
-			</li>
-			<li class="list-group-item flex-box">
-				<img src="./images/yanzheng.png">
-				<input type="text" placeholder="请输入手机号码">
-				<button class="btn btn-default">获取验证码</button>
-			</li>
+ 		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<div class="col-xs-12 flex-box">
+				    <img src="./images/phone_03.png">
+				    <input type="text" class="form-control" id="name" placeholder="请输入手机号码">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-xs-12 flex-box">
+				    <img src="./images/yanzheng.png">
+					<input type="text" class="form-control" id="name" placeholder="请输入验证码">
+					<button class="btn btn-default">获取验证码</button>				
+				</div>
+			</div>
+		</form>
 
-		</ul>
-		<div class="panel-body">
+
+ 		<div class="panel-body">
 			<button type="button" class="btn btn-warning btn-lg btn-block">确认</button>
 		</div>
 	</section>

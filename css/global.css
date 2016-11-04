@@ -24,7 +24,7 @@ header{
     z-index: 1998;
 	background-color: #f8c400;
 	color: #fff;
-	height: 4rem;
+	height: 4.5rem;
 }
 ul{
 	margin-bottom: 0;
@@ -137,7 +137,7 @@ nav .tabbar .dropdown-menu:after{
 }
 .main-container{
     margin-bottom: 4.5rem;
-    margin-top: 5rem;
+    margin-top: 4.5rem;
    	padding: 1rem;
 }
 .color-black{
@@ -210,7 +210,9 @@ p.nowrap{
 .nav-pills li:last-child{
 	border: none;
 }
-
+.nav>li>a:focus, .nav>li>a:hover{
+	background: none;
+}
 .nav-pills li a{
 	padding: 0;
 	color: #929292;
@@ -238,6 +240,17 @@ p.nowrap{
 /*------------------------
 		home.css
 --------------------------*/
+.home .main-container,
+.active .main-container,
+.bound-phone .main-container,
+.case .main-container,
+.Dealer-Weui-home .main-container,
+.home-dealer .main-container,
+.home-dealer .main-container,
+.massage .main-container,
+.order .main-container{
+	margin-top: 0;
+}
 .fa-sort-up{
 	color: #8c8c8c;
 }
@@ -270,7 +283,8 @@ p.nowrap{
 .order .main-container,
 .massage .main-container,
 .active .main-container,
-.bound-phone .main-container{
+.bound-phone .main-container,
+.add-report .main-container{
 	padding:1rem 0;
 }
 .home-dealer .list-group-item,
@@ -548,7 +562,7 @@ i.fa-map-marker{
 	background-color: #f3f3f3;
 }
 .case .list-group-box{
-	width: 24%;
+	width: 34%;
 }
 .case .list-group-box .list-group-item{
 	border-left: 0;
@@ -565,8 +579,7 @@ i.fa-map-marker{
 	border-radius: 0;
 }
 .case .case-container{
-    width: 76%;
-    padding: 1rem 1.4rem;
+    padding: 1rem;
 }
 .case #carousel-example-generic{
 	height: 8rem;
@@ -579,10 +592,15 @@ i.fa-map-marker{
 	margin-bottom: 0;
 }
 .carousel-indicators li{
-	width: 0.8rem;
-	height: 0.8rem;
+	width: 0.7rem;
+	height: 0.7rem;
 	background-color: #fff;
 	border: 0;
+	margin:0;
+}
+.carousel-indicators li.active{
+	width: 0.7rem;
+	height: 0.7rem;
 }
 .carousel-indicators .active{
 	background-color: #f8c400;
@@ -596,9 +614,13 @@ i.fa-map-marker{
 	margin-bottom: 0.4rem;
 }
 .case .case-container .list-group-item-img{
- 	width: 60%;
+ 	width: 11rem;
+    height: 10rem;
 }
-
+.case .case-container .list-group-item-img img{
+	width: 11rem;
+    height: 10rem;
+}
 
 
 
@@ -625,22 +647,76 @@ i.fa-map-marker{
 /*-------------------------
         bound-phone
  --------------------------*/
-.bound-phone .list-group-item{
-	border-radius: 0;
-	border-left: 0;
-	border-right: 0;
+ .bound-phone form,
+ .add-report form{
+    background: #fff;
 }
-.bound-phone .list-group-item img{
+.bound-phone .form-group img{
 	width: 1.6rem;
+	margin-right:1rem; 
 }
-.bound-phone .list-group-item input[type="text"]{
-	flex: 1;
-    padding: 0 0.4rem;
-    margin: 0 0.4rem;
-    line-height: 3rem;
-    outline: none;
+.bound-phone .form-group .btn{
+	margin-left: 1rem;
 }
-.bound-phone .btn-default{
+.form-control{
+	box-shadow: none;
+	outline: none;
+	border: 1px solid #efefef;
+}
+.bound-phone .form-horizontal .form-group{
+    padding: 1rem;
+    border-bottom: 1px solid #efefef;
+}
+.bound-phone .btn-default,
+.add-report .btn-default{
 	border-color: #efefef;
 	color: #cfcfcf;
+}
+
+
+
+
+/*-------------------------
+		add-report
+-------------------------*/
+.add-report .form-horizontal .form-group{
+    margin: 0 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #efefef;
+}
+.add-report form label{
+	margin-bottom: 0;
+	min-width: 5.5rem;
+}
+.add-report .form-group select{
+	position: relative;
+}
+.add-report .form-group .caret{
+	position: absolute;
+	right: 1rem;
+}
+.input-img-box{
+    padding-right: 1rem;
+    margin-top: 1rem;
+    min-height: 5.8rem;
+}
+.input-img{
+	position: relative;
+}
+.close{
+    position: absolute;
+    top: -0.5rem;
+    right: 0.5rem;
+    font-weight: 200;
+    background: #f8c400;
+    opacity: 1;
+    color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.add-report .btn-upload-img{
+	margin-top: 1rem;
 }
